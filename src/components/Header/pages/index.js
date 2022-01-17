@@ -1,10 +1,13 @@
 import react, { Component } from "react"
 import {Form, FormGroup, Label, Input, Button} from 'reactstrap' 
-
+import Header from '../../Header';
 export default class Login extends Component {
     render() {
         return(
-            <Form>
+            <div>
+                <Header title="Página de login"/>
+                <hr/>
+                <Form>
                 <FormGroup>
                     <Label for="email"> Email</Label>
                     <Input type="text" id="email" placeholder="Informe o seu e-mail"/>
@@ -16,6 +19,9 @@ export default class Login extends Component {
                 <Button color="primary"> Entrar</Button>
 
             </Form>
+
+            </div>
+            
         );
     }
 }
